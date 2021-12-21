@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable no-unused-vars */
+import { Link, Routes, Route } from "react-router-dom";
+import Productcard from "./components/productcard";
+import Productdetail from "./components/productdetail";
+import About from "./components/about";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <nav>
+        <Link to="/productcard"> Productcard </Link>
+        <Link to="/productdetail"> Productdetail </Link>
+        <Link to="/about"> About</Link>
+      </nav>
+      <Routes>
+        <Route path="/productcard" element={<Productcard />} />
+        <Route path="/productdetail" element={<Productdetail />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 }
