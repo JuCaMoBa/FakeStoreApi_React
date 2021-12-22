@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { Link, Routes, Route } from "react-router-dom";
 import Productcard from "./components/productcard";
 import Productdetail from "./components/productdetail";

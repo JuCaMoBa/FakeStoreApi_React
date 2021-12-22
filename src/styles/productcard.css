@@ -1,0 +1,20 @@
+.container {
+  width: 400px;
+  height: 300px;
+  border: solid 1px black;
+  display: inline-table;
+  margin: 20px 20px;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-top: revert;
+}
+.container img {
+  width: 90px;
+  height: 120px;
+  position: relative;
+  top: 20px;
+  left: 150px;
+}

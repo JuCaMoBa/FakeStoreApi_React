@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-
+import "../styles/productcard.css";
+import "../styles/normalizce.css";
 const BASE_URL = "https://fakestoreapi.com/products";
 
 const Productcard = () => {
@@ -14,9 +15,9 @@ const Productcard = () => {
     <>
       {cards.map(function (card) {
         return (
-          <div className="items">
-            <p>{card.title}</p>
-            <img className="items_img" src={card.image} alt={card.id} />
+          <div className="container">
+            <img className="image" src={card.image} alt={card.id} />
+            <h5 className="title">{card.title}</h5>
           </div>
         );
       })}
