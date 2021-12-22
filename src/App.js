@@ -1,14 +1,15 @@
 import { Link, Routes, Route } from "react-router-dom";
 import Productcard from "./components/productcard";
-import Productdetail from "./components/productdetail";
 import About from "./components/about";
+import Productdetail from "./components/productdetail";
+import "./styles/App.css";
 
 function App() {
   return (
     <div>
-      <nav>
-        <Link to="/productcard"> Productcard </Link>
-        <Link to="/productdetail"> Productdetail </Link>
+      <nav className="nav">
+        <Link to="/productcard"> Product Card </Link>
+        <></>
         <Link to="/about"> About</Link>
       </nav>
       <Routes>

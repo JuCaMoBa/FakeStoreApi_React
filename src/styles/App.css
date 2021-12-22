@@ -1,0 +1,7 @@
+.nav {
+  background-color: cornflowerblue;
+  font-size: x-large;
+  font-family: monospace;
+  -webkit-text-stroke-width: thick;
+  inline-size: max-content;
+}

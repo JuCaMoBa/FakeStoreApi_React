@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../styles/productcard.css";
-import "../styles/normalizce.css";
 const BASE_URL = "https://fakestoreapi.com/products";
 
 const Productcard = () => {
@@ -18,6 +18,10 @@ const Productcard = () => {
           <div className="container">
             <img className="image" src={card.image} alt={card.id} />
             <h5 className="title">{card.title}</h5>
+            <Link className="button" to="/productdetail">
+              {" "}
+              Go to Detail
+            </Link>
           </div>
         );
       })}

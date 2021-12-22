@@ -18,3 +18,13 @@
   top: 20px;
   left: 150px;
 }
+
+.button {
+  background-color: #2b70fc;
+  border-radius: 10px;
+  color: white;
+  font-size: larger;
+  text-underline-position: under;
+  float: right;
+  margin: inherit;
+}
