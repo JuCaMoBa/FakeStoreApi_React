@@ -9,13 +9,14 @@ const Productcard = () => {
   useEffect(() => {
     fetch(BASE_URL)
       .then((response) => response.json())
-      .then((data) => setCards(data));
+      .then((data) => setCards(data))
+      .catch((e) => console.error(e));
   }, []);
   return (
     <>
       {cards.map(function (card) {
         return (
-          <div className="container">
+          <div key={card.id} className="container">
             <img className="image" src={card.image} alt={card.id} />
             <h5 className="title">{card.title}</h5>
             <Link className="button" to="/productdetail">
