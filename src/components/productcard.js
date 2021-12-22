@@ -14,6 +14,7 @@ const Productcard = () => {
   }, []);
   return (
     <>
+      <h1 className="header">Products</h1>
       {cards.map(function (card) {
         return (
           <div key={card.id} className="container">

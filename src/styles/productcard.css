@@ -28,3 +28,7 @@
   float: right;
   margin: inherit;
 }
+
+.header {
+  text-align-last: center;
+}
