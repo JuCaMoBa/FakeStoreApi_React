@@ -16,19 +16,13 @@ export default function Productcard() {
 
   return (
     <>
-      <h1 className="header">Products</h1>
+      <h1 className="headercard">Products</h1>
       {cards.map(function (card) {
         return (
-          <div key={card.id} className="container">
-            <img className="image" src={card.image} alt={card.id} />
-            <h5 className="title">{card.title}</h5>
-            <Link
-              className="button"
-              to={{
-                pathname: "/productdetail",
-                state: { cards }
-              }}
-            >
+          <div key={card.id} className="containercard">
+            <img className="imagecard" src={card.image} alt={card.id} />
+            <h5 className="titlecard">{card.title}</h5>
+            <Link className="buttoncard" to={`/productdetail/${card.id}`}>
               Go to Detail
             </Link>
           </div>
