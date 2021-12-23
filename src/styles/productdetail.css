@@ -1,4 +1,4 @@
-.container {
+.containerdetail {
   width: 400px;
   height: 300px;
   border: solid 1px black;
@@ -7,19 +7,19 @@
   border-radius: 10px;
 }
 
-.title {
+.titledetail {
   text-align: center;
   margin-top: revert;
   color: cadetblue;
 }
 
-.description {
+.descriptiondetail {
   text-align: center;
   margin-top: revert;
   font-size: inherit;
   color: darkgrey;
 }
-.container img {
+.containerdetail img {
   width: 90px;
   height: 120px;
   position: relative;
@@ -27,25 +27,25 @@
   left: 150px;
 }
 
-.price {
+.pricedetail {
   text-align-last: center;
   color: rgb(47, 196, 17);
   font-size: initial;
 }
 
-.category {
+.categorydetail {
   text-align-last: center;
   color: rgb(47, 196, 17);
   font-size: initial;
 }
 
-.rate {
+.ratedetail {
   text-align-last: center;
   color: rgb(47, 196, 17);
   font-size: initial;
 }
 
-.count {
+.countdetail {
   text-align-last: center;
   color: rgb(47, 196, 17);
   font-size: initial;

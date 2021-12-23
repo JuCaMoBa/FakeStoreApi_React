@@ -1,0 +1,17 @@
+.containerabout {
+  width: 386px;
+  height: 394px;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: bisque;
+  color: rgb(62, 70, 175);
+}
+
+.containerabout img {
+  width: 90px;
+  height: 120px;
+  position: relative;
+  border-radius: 20px;
+}
