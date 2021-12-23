@@ -1,16 +1,13 @@
-import { Link, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Productcard from "./components/productcard";
 import About from "./components/about";
 import Productdetail from "./components/productdetail";
-import "./styles/App.css";
+import Nav from "./components/navigation";
 
 function App() {
   return (
     <div>
-      <nav className="nav">
-        <Link to="/"> Product Card </Link>
-        <Link to="/about"> About</Link>
-      </nav>
+      <Nav />
       <Routes>
         <Route path="/" element={<Productcard />} />
         <Route path="/productdetail" element={<Productdetail />} />

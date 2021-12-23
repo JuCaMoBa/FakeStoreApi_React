@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+
 import "../styles/productcard.css";
 
 const BASE_URL = "https://fakestoreapi.com/products";
@@ -21,7 +22,13 @@ export default function Productcard() {
           <div key={card.id} className="container">
             <img className="image" src={card.image} alt={card.id} />
             <h5 className="title">{card.title}</h5>
-            <Link className="button" to="/productdetail">
+            <Link
+              className="button"
+              to={{
+                pathname: "/productdetail",
+                state: { cards }
+              }}
+            >
               Go to Detail
             </Link>
           </div>
