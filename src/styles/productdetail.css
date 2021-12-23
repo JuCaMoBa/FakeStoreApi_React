@@ -1,0 +1,52 @@
+.container {
+  width: 400px;
+  height: 300px;
+  border: solid 1px black;
+  display: inline-table;
+  margin: 20px 20px;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-top: revert;
+  color: cadetblue;
+}
+
+.description {
+  text-align: center;
+  margin-top: revert;
+  font-size: inherit;
+  color: darkgrey;
+}
+.container img {
+  width: 90px;
+  height: 120px;
+  position: relative;
+  top: 20px;
+  left: 150px;
+}
+
+.price {
+  text-align-last: center;
+  color: rgb(47, 196, 17);
+  font-size: initial;
+}
+
+.category {
+  text-align-last: center;
+  color: rgb(47, 196, 17);
+  font-size: initial;
+}
+
+.rate {
+  text-align-last: center;
+  color: rgb(47, 196, 17);
+  font-size: initial;
+}
+
+.count {
+  text-align-last: center;
+  color: rgb(47, 196, 17);
+  font-size: initial;
+}

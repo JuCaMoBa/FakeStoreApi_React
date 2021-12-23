@@ -1,4 +1,4 @@
-.container {
+.containercard {
   width: 400px;
   height: 300px;
   border: solid 1px black;
@@ -7,11 +7,11 @@
   border-radius: 10px;
 }
 
-.title {
+.titlecard {
   text-align: center;
   margin-top: revert;
 }
-.container img {
+.containercard img {
   width: 90px;
   height: 120px;
   position: relative;
@@ -19,7 +19,7 @@
   left: 150px;
 }
 
-.button {
+.buttoncard {
   background-color: #2b70fc;
   border-radius: 10px;
   color: white;
@@ -29,6 +29,6 @@
   margin: inherit;
 }
 
-.header {
+.headercard {
   text-align-last: center;
 }
