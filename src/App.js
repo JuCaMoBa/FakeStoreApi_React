@@ -8,12 +8,11 @@ function App() {
   return (
     <div>
       <nav className="nav">
-        <Link to="/productcard"> Product Card </Link>
-        <></>
+        <Link to="/"> Product Card </Link>
         <Link to="/about"> About</Link>
       </nav>
       <Routes>
-        <Route path="/productcard" element={<Productcard />} />
+        <Route path="/" element={<Productcard />} />
         <Route path="/productdetail" element={<Productdetail />} />
         <Route path="/about" element={<About />} />
       </Routes>
