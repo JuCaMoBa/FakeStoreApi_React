@@ -1,6 +1,6 @@
 .containerabout {
-  width: 386px;
-  height: 394px;
+  width: 400px;
+  height: 450px;
   border: solid 1px black;
   display: flex;
   flex-direction: column;

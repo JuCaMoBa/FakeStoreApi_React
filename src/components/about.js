@@ -6,10 +6,11 @@ export default function about() {
   return (
     <div className="containerabout">
       <h5>Name: Juan C. Moreno </h5>
-      <h5>Description: Juan C. Moreno </h5>
+      <h5>Description: Fake Sotre API with React </h5>
       <img src={image} alt="myimage" />
       <ul>
-        <li> Hooks(useParams, usestate)</li>
+        <p>Aprendi</p>
+        <li> Hooks(useParams, useState)</li>
         <li> React Router </li>
         <li>fetch</li>
       </ul>
