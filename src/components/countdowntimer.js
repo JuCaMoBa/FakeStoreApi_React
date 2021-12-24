@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import TimeContext from "../containers/TimeContext";
 
 function Countdowntimer({ minSec }) {
   const { minutes = 0, seconds = 60 } = minSec;
@@ -19,12 +20,15 @@ function Countdowntimer({ minSec }) {
   });
 
   return (
-    <div>
-      <strong>
-        {" "}
-        {`${mins.toString().padStart(2, 0)}: ${secs.toString().padStart(2, 0)}`}
-      </strong>
-    </div>
+    <TimeContext.Provider value={[[mins, secs], setTime]}>
+      <div>
+        <strong>
+          {`${mins.toString().padStart(2, 0)}: ${secs
+            .toString()
+            .padStart(2, 0)}`}
+        </strong>
+      </div>
+    </TimeContext.Provider>
   );
 }
 
