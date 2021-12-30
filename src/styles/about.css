@@ -5,13 +5,13 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background-color: bisque;
-  color: rgb(62, 70, 175);
+  background-color: #979090;
+  color: rgb(26 27 46);
+  margin: 30px;
 }
 
-.containerabout img {
+.containerabout .imagen {
   width: 90px;
-  height: 120px;
   position: relative;
   border-radius: 20px;
 }
