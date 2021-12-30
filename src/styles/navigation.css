@@ -1,8 +1,23 @@
 .nav {
-  font-size: 25px;
-  font-family: sans-serif;
-  font-variant-ligatures: inherit;
-  display: flex;
-  justify-content: space-around;
-  flex-flow: column;
+  background-color: #aba2a2db;
+  overflow: hidden;
+}
+
+.nav .alink {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav .alink:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav .alink.active {
+  background-color: #585e58;
+  color: white;
 }

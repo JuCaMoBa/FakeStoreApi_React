@@ -4,9 +4,13 @@ import "../styles/navigation.css";
 
 export default function Nav() {
   return (
-    <nav className="nav">
-      <Link to="/"> Product Card </Link>
-      <Link to="/about"> About</Link>
-    </nav>
+    <div className="nav">
+      <Link className="active alink" to="/">
+        Product Card
+      </Link>
+      <Link className="alink" to="/about">
+        About
+      </Link>
+    </div>
   );
 }
