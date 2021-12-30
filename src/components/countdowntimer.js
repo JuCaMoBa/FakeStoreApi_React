@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function Countdowntimer({ blockButton }) {
+function Countdowntimer({ blocked }) {
   const random = () => {
     let id = Math.floor(Math.random() * 2);
     if (id === 0) {
@@ -19,7 +19,7 @@ function Countdowntimer({ blockButton }) {
   const timer = () => {
     if (mins === 0 && secs === 0) {
       setTime([0, 0]);
-      blockButton();
+      blocked();
       return;
     } else if (secs === 0) {
       setTime([mins - 1, 59]);

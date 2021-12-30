@@ -1,7 +1,8 @@
 .nav {
-  font-size: x-large;
-  font-family: monospace;
-  -webkit-text-stroke-width: thick;
-  inline-size: max-content;
-  background: border-box;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-variant-ligatures: inherit;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
 }
