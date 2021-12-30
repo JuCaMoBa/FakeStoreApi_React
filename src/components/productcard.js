@@ -8,6 +8,7 @@ const BASE_URL = "https://fakestoreapi.com/products";
 
 export default function Productcard() {
   const [cards, setCards] = useState([]);
+  const [blocked, setBlocked] = useState(false);
 
   useEffect(() => {
     fetch(BASE_URL)
@@ -15,13 +16,8 @@ export default function Productcard() {
       .then((data) => setCards(data));
   }, []);
 
-  const random = () => {
-    let id = Math.floor(Math.random() * 2);
-    if (id === 0) {
-      return { minutes: 1, seconds: 0 };
-    } else {
-      return { minutes: 3, seconds: 0 };
-    }
+  const blockButton = () => {
+    setBlocked(true);
   };
 
   return (
@@ -32,10 +28,13 @@ export default function Productcard() {
           <div key={card.id} className="containercard">
             <img className="imagecard" src={card.image} alt={card.id} />
             <h5 className="titlecard">{card.title}</h5>
-            <Link className="buttoncard" to={`/productdetail/${card.id}`}>
+            <Link
+              className="buttoncard"
+              to={blocked ? "#" : `/productdetail/${card.id}`}
+            >
               Go to Detail
             </Link>
-            <Countdowntimer minSec={random()} />
+            <Countdowntimer blockButton={blockButton} />
           </div>
         );
       })}
