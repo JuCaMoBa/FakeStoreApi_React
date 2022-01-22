@@ -21,7 +21,7 @@ export default function Productcard() {
           <div key={card.id} className="containercard">
             <img className="imagecard" src={card.image} alt={card.id} />
             <h5 className="titlecard">{card.title}</h5>
-            <Linkdetail {...card} />
+            <Linkdetail id={card.id} />
           </div>
         );
       })}

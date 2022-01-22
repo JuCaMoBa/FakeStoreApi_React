@@ -35,7 +35,7 @@ function Countdowntimer({ blocked }) {
 
   return (
     <div>
-      <strong>
+      <strong className="timercard">
         {`${mins.toString().padStart(2, 0)}: ${secs.toString().padStart(2, 0)}`}
       </strong>
     </div>
