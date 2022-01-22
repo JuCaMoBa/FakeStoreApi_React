@@ -1,17 +1,24 @@
 .containerabout {
-  width: 400px;
+  width: 1025px;
   height: 450px;
   border: solid 1px black;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background-color: #979090;
+  background-color: #aba2a2db;
   color: rgb(26 27 46);
   margin: 30px;
+  align-items: center;
 }
 
 .containerabout .imagen {
   width: 90px;
-  position: relative;
   border-radius: 20px;
+  image-orientation: initial;
+  align-self: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
 }

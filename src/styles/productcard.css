@@ -9,7 +9,7 @@
 
 .titlecard {
   text-align: center;
-  margin-top: revert;
+  margin-top: 40px;
 }
 .containercard img {
   width: 90px;
@@ -19,16 +19,14 @@
   left: 150px;
 }
 
-.buttoncard {
-  background-color: #2b70fc;
-  border-radius: 10px;
-  color: white;
-  font-size: larger;
-  text-underline-position: under;
-  float: right;
-  margin: inherit;
-}
-
 .headercard {
   text-align-last: center;
+}
+
+.timercard {
+  margin-left: 20px;
+}
+
+.containerlinkdetail {
+  margin-top: 50px;
 }
